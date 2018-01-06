@@ -1,0 +1,952 @@
+mkdir: cannot change permissions of '/dev/shm': Permission denied
+mkdir: cannot change permissions of '/dev/mqueue': Permission denied
+'C:\WINDOWS\system32\drivers\etc\hosts' -> '/etc/hosts'
+'C:\WINDOWS\system32\drivers\etc\protocol' -> '/etc/protocols'
+'C:\WINDOWS\system32\drivers\etc\services' -> '/etc/services'
+'C:\WINDOWS\system32\drivers\etc\networks' -> '/etc/networks'
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git config --global user.name vijay
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git config --global user.name "vijay"
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git config --global user.email "vjsgawade@gmail.com"
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git config --color.ui true
+error: unknown option `color.ui'
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ git config --global --list
+user.email=vjsgawade@gmail.com
+user.name=vijay
+color.ui=true
+
+student@DESKTOP-UB8FOUD MINGW64 ~
+$ cd Desktop
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ mkdir vijay-git-project
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ cd vijay-git-project
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project
+$ git init
+Initialized empty Git repository in C:/Users/student/Desktop/vijay-git-project/.git/
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        index.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.txt
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git commit -m "Created index.txt" index.txt
+[master (root-commit) 59436f9] Created index.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        license.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add license.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   license.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.txt
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git commit -m "create license.txt" -a
+[master 8331be5] create license.txt
+ 2 files changed, 1 insertion(+)
+ create mode 100644 license.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git log
+commit 8331be50cdfcf53724bb1c3de9644e4e41bcf01d (HEAD -> master)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:14:10 2018 +0530
+
+    create license.txt
+
+commit 59436f9d357db5d941a1e0ef4d2aa46796ae7e16
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:05:35 2018 +0530
+
+    Created index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git diff
+diff --git a/index.txt b/index.txt
+index bd50bd8..929fd4c 100644
+--- a/index.txt
++++ b/index.txt
+@@ -1 +1,2 @@
+-My name is Vijay
+\ No newline at end of file
++My name is Vijay
++Android Course
+\ No newline at end of file
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add .
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git diff
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git diff --staged
+diff --git a/index.txt b/index.txt
+index bd50bd8..929fd4c 100644
+--- a/index.txt
++++ b/index.txt
+@@ -1 +1,2 @@
+-My name is Vijay
+\ No newline at end of file
++My name is Vijay
++Android Course
+\ No newline at end of file
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git reset HEAD index.txt
+Unstaged changes after reset:
+M       index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git checkout -- index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git commit -m "add full name" index.txt
+[master 3050a6b] add full name
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git log
+commit 3050a6bce3d1311cfcdbae080d6be9992c149e25 (HEAD -> master)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:31:16 2018 +0530
+
+    add full name
+
+commit 8331be50cdfcf53724bb1c3de9644e4e41bcf01d
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:14:10 2018 +0530
+
+    create license.txt
+
+commit 59436f9d357db5d941a1e0ef4d2aa46796ae7e16
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:05:35 2018 +0530
+
+    Created index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git reset --soft HEAD~1
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   index.txt
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git log
+commit 8331be50cdfcf53724bb1c3de9644e4e41bcf01d (HEAD -> master)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:14:10 2018 +0530
+
+    create license.txt
+
+commit 59436f9d357db5d941a1e0ef4d2aa46796ae7e16
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:05:35 2018 +0530
+
+    Created index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git commit -m "remove it" index.txt
+[master 6fc817e] remove it
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git log
+commit 6fc817ef96c431524f284b70c335599773700956 (HEAD -> master)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:37:48 2018 +0530
+
+    remove it
+
+commit 8331be50cdfcf53724bb1c3de9644e4e41bcf01d
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:14:10 2018 +0530
+
+    create license.txt
+
+commit 59436f9d357db5d941a1e0ef4d2aa46796ae7e16
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:05:35 2018 +0530
+
+    Created index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git reset --hard HEAD~1
+HEAD is now at 8331be5 create license.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git log
+commit 8331be50cdfcf53724bb1c3de9644e4e41bcf01d (HEAD -> master)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:14:10 2018 +0530
+
+    create license.txt
+
+commit 59436f9d357db5d941a1e0ef4d2aa46796ae7e16
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 15:05:35 2018 +0530
+
+    Created index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git remote add origin git@github.com:vj619/vijay-git-project.git
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git remote add origin git@github.com:vj619/vijay-git-project.git
+fatal: remote origin already exists.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git remote rm origin
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git remote add origin git@github.com:vj619/vijay-git-project.git
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git remote -v
+origin  git@github.com:vj619/vijay-git-project.git (fetch)
+origin  git@github.com:vj619/vijay-git-project.git (push)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git push -u origin master
+ERROR: Permission to vj619/vijay-git-project.git denied to dushyasan.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ ssh-keygen -t rsa -b 4096 -C "vjsgawade@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/student/.ssh/id_rsa):
+/c/Users/student/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/student/.ssh/id_rsa.
+Your public key has been saved in /c/Users/student/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:gTogkNBR3rdw+OFxCc5LaLi/uShAxiJmNZKN4qBL45U vjsgawade@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|+o=o.   .        |
+|=+.= o * . .     |
+|B + = B X o      |
+|+@ E + B B       |
+|X.o +   S        |
+|o.   o           |
+| .    .          |
+|  .  . o         |
+|   .. +.         |
++----[SHA256]-----+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ eval $(ssh-agent -s)
+Agent pid 6784
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/student/.ssh/id_rsa (/c/Users/student/.ssh/id_rsa)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ clip < ~/.ssh/id_rsa.pub
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (6/6), 474 bytes | 237.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To github.com:vj619/vijay-git-project.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git pull origin master
+From github.com:vj619/vijay-git-project
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ cd ..
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ git clone git@github.com:Rohit8238/rohit-git-project.git
+Cloning into 'rohit-git-project'...
+remote: Counting objects: 11, done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 11 (delta 0), reused 11 (delta 0), pack-reused 0
+Receiving objects: 100% (11/11), done.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ cd rohit-git-project/
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git remote -v
+origin  git@github.com:Rohit8238/rohit-git-project.git (fetch)
+origin  git@github.com:Rohit8238/rohit-git-project.git (push)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch vijay
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch
+* master
+  vijay
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git checkout vijay
+Switched to branch 'vijay'
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git branch
+  master
+* vijay
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git add Product.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git commit -m "created Product.txt" Product.txt
+[vijay eb631ab] created Product.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Product.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git log
+commit eb631ab984a316411a287dbb19847114f120121c (HEAD -> vijay)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 16:34:36 2018 +0530
+
+    created Product.txt
+
+commit ae5c56c5b6b086d839d8c1227f448ba5aec9addd (origin/master, origin/HEAD, master)
+Author: Rohit <rohitkhamkar@gmail.com>
+Date:   Sat Jan 6 15:30:47 2018 +0530
+
+    Created Lic.txt and modified rohit.txt
+
+commit 40e01f86654c0f03fb25b385a112193c0eea3003
+Author: Rohit <rohitkhamkar@gmail.com>
+Date:   Sat Jan 6 15:16:09 2018 +0530
+
+    Created Lic.txt and modified rohit.txt
+
+commit b3347b4082a2dedff08e4554bcdb9a0ae408c50f
+Author: Rohit <rohitkhamkar@gmail.com>
+Date:   Sat Jan 6 15:14:17 2018 +0530
+
+    Created Lic.txt and modified rohit.txt
+
+commit 8f4146a9a2f00b82691fe94d8b2ea9e2ea6cbac7
+Author: Rohit <rohitkhamkar@gmail.com>
+Date:   Sat Jan 6 15:04:00 2018 +0530
+
+    Created rohit.txt
+(END)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ^C
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ^C
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ^C
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+^C
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ^C
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ^C
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ quit
+bash: quit: command not found
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ jhjhg
+bash: jhjhg: command not found
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git ls
+git: 'ls' is not a git command. See 'git --help'.
+
+The most similar command is
+        lfs
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ls
+lic.txt  Product.txt  rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ ls
+lic.txt  rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git checkout vijay
+Switched to branch 'vijay'
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ ls
+lic.txt  Product.txt  rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (vijay)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git merge vijay
+Updating ae5c56c..eb631ab
+Fast-forward
+ Product.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Product.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch -d vijay
+Deleted branch vijay (was eb631ab).
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch
+* master
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch order
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch
+* master
+  order
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git checkout order
+Switched to branch 'order'
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git add order.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git commit -m "new file order.txt" order.txt
+[order a7250b7] new file order.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 order.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git add Product.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git commit -m "modify Product.txt" Product.txt
+[master 6ed5c30] modify Product.txt
+ 1 file changed, 7 insertions(+)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git push origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 617 bytes | 617.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To github.com:Rohit8238/rohit-git-project.git
+   ae5c56c..6ed5c30  master -> master
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git checkout order
+Switched to branch 'order'
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git add invice.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git commit -m "invice file is added" invice.txt
+[order e7f08a6] invice file is added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 invice.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ ls
+invice.txt  lic.txt  order.txt  Product.txt  rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (order)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git merge order
+Merge made by the 'recursive' strategy.
+ invice.txt | 0
+ order.txt  | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 invice.txt
+ create mode 100644 order.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git branch -d order
+Deleted branch order (was e7f08a6).
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git log
+commit ae7b74f2143d09cb2bdaafdf2d50414f71662539 (HEAD -> master)
+Merge: 6ed5c30 e7f08a6
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 17:03:09 2018 +0530
+
+    Merge branch 'order'
+
+commit e7f08a63508b9e320400b74be7792e7bb447f735
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 17:00:29 2018 +0530
+
+    invice file is added
+
+commit 6ed5c30ef77af74bf6984b1b42722a661e6798a5 (origin/master, origin/HEAD)
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 16:52:48 2018 +0530
+
+    modify Product.txt
+
+commit a7250b7b0686067409867dc596612566d015fb6c
+Author: vijay <vjsgawade@gmail.com>
+Date:   Sat Jan 6 16:48:41 2018 +0530
+
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git push -u origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 706 bytes | 706.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:Rohit8238/rohit-git-project.git
+   6ed5c30..ae7b74f  master -> master
+Branch master set up to track remote branch master from origin.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ cd ..
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ cd vijay-git-project/
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git pull
+remote: Counting objects: 11, done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 11 (delta 4), reused 9 (delta 2), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+From github.com:vj619/vijay-git-project
+   8331be5..c1aaf87  master     -> origin/master
+Updating 8331be5..c1aaf87
+Fast-forward
+ Product.txt | 0
+ index.txt   | 2 +-
+ invoice.txt | 0
+ order.txt   | 0
+ 4 files changed, 1 insertion(+), 1 deletion(-)
+ create mode 100644 Product.txt
+ create mode 100644 invoice.txt
+ create mode 100644 order.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git add index.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git com
+git: 'com' is not a git command. See 'git --help'.
+
+The most similar commands are
+        commit
+        column
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git commit -m "add my name index.txt" index.txt
+[master c1ca58d] add my name index.txt
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 288 bytes | 288.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:vj619/vijay-git-project.git
+   c1aaf87..c1ca58d  master -> master
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/vijay-git-project (master)
+$ cd ..
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop
+$ cd rohit-git-project/
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git add rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git commit -m "new line is add rohit.txt" rohit.txt
+[master 0763a08] new line is add rohit.txt
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git push origin master
+To github.com:Rohit8238/rohit-git-project.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:Rohit8238/rohit-git-project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 1), reused 3 (delta 1), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:Rohit8238/rohit-git-project
+   ae7b74f..78cc472  master     -> origin/master
+Auto-merging rohit.txt
+CONFLICT (content): Merge conflict in rohit.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git push origin master
+To github.com:Rohit8238/rohit-git-project.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:Rohit8238/rohit-git-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git add rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git commit -m "new line is add rohit.txt" rohit.txt
+fatal: cannot do a partial commit during a merge.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git push origin master
+To github.com:Rohit8238/rohit-git-project.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:Rohit8238/rohit-git-project.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git pull
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master|MERGING)
+$ git commit
+[master 114fe70] Merge branch 'master' of github.com:Rohit8238/rohit-git-project
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 611 bytes | 305.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:Rohit8238/rohit-git-project.git
+   78cc472..114fe70  master -> master
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git log --oneline
+114fe70 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'master' of github.com:Rohit8238/rohit-git-project
+0763a08 new line is add rohit.txt
+78cc472 index changed
+ae7b74f Merge branch 'order'
+e7f08a6 invice file is added
+6ed5c30 modify Product.txt
+a7250b7 new file order.txt
+eb631ab created Product.txt
+ae5c56c Created Lic.txt and modified rohit.txt
+40e01f8 Created Lic.txt and modified rohit.txt
+b3347b4 Created Lic.txt and modified rohit.txt
+8f4146a Created rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$ git log --oneline --graph
+*   114fe70 (HEAD -> master, origin/master, origin/HEAD) Merge branch 'master' of github.com:Rohit8238/rohit-git-project
+|\
+| * 78cc472 index changed
+* | 0763a08 new line is add rohit.txt
+|/
+*   ae7b74f Merge branch 'order'
+|\
+| * e7f08a6 invice file is added
+| * a7250b7 new file order.txt
+* | 6ed5c30 modify Product.txt
+|/
+* eb631ab created Product.txt
+* ae5c56c Created Lic.txt and modified rohit.txt
+* 40e01f8 Created Lic.txt and modified rohit.txt
+* b3347b4 Created Lic.txt and modified rohit.txt
+* 8f4146a Created rohit.txt
+
+student@DESKTOP-UB8FOUD MINGW64 ~/Desktop/rohit-git-project (master)
+$
